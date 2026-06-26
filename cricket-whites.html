@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cricket Whites T-Shirts &amp; Trousers — IRA SPORTSWEAR</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #262262;
+  --red: #ec1e24;
+  --black: #111111;
+  --white: #ffffff;
+  --warm: #f8f7f4;
+  --line: #e6e4df;
+  --muted: #888580;
+  --font-d: 'Bricolage Grotesque', sans-serif;
+  --font-b: 'Inter', sans-serif;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-b);
+  background: var(--white);
+  color: var(--black);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+a { text-decoration: none; color: inherit; }
+img { display: block; max-width: 100%; }
+.container { max-width: 1140px; margin: 0 auto; padding: 0 32px; }
+
+.eyebrow {
+  font-size: 11px; font-weight: 500; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--red);
+  display: flex; align-items: center; gap: 8px;
+}
+.eyebrow::before { content: ''; width: 20px; height: 1px; background: var(--red); }
+.r { color: var(--red); }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 32px; border-radius: 100px;
+  font-family: var(--font-b); font-size: 14px; font-weight: 500;
+  cursor: pointer; border: none;
+  transition: opacity .2s, transform .15s; white-space: nowrap;
+}
+.btn:hover { opacity: .82; transform: translateY(-1px); }
+.btn-dark { background: var(--black); color: var(--white); }
+.btn-line { background: transparent; color: var(--black); border: 1px solid #c8c6c1; }
+.btn-line:hover { border-color: var(--black); }
+
+/* HERO */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 100svh;
+  background: #fff;
+  display: flex; flex-direction: column; justify-content: center;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 38.2%, rgba(255,255,255,.6) 50%, rgba(255,255,255,0) 61.8%);
+  z-index: 1;
+}
+.hero-inner {
+  position: relative; z-index: 3;
+  max-width: 1160px; margin: 0 auto;
+  padding: clamp(16px, 4vw, 48px) 32px;
+  width: 100%;
+}
+.hero-copy { max-width: min(560px, 38.2vw); }
+
+/* HERO PRICE CARD — bottom right */
+.hero-price-card {
+  position: absolute;
+  bottom: 48px; right: 48px;
+  z-index: 4;
+  background: rgba(17,17,17,0.82);
+  backdrop-filter: blur(18px) saturate(1.4);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 14px 22px;
+  min-width: 180px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.08);
+  animation: heroFadeUp .8s .6s ease both;
+}
+.hpc-label {
+  font-size: 10px; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; color: rgba(255,255,255,0.45);
+  margin-bottom: 6px;
+}
+.hpc-price {
+  font-family: var(--font-d); font-size: 48px; font-weight: 800;
+  color: #fff; line-height: 1; letter-spacing: -.03em;
+  display: flex; align-items: flex-start; gap: 2px;
+}
+.hpc-symbol {
+  font-size: 22px; font-weight: 700; margin-top: 6px;
+  color: #fff;
+}
+.hpc-sub {
+  font-size: 11px; color: rgba(255,255,255,0.4);
+  margin-top: 6px; font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .hero-price-card { bottom: 100px; right: 20px; padding: 16px 20px; min-width: 160px; }
+  .hpc-price { font-size: 36px; }
+}
+/* hero-tag replaced by hero-tag-wrap */
+.hero-tag span { width: 6px; height: 6px; border-radius: 50%; background: var(--red); display:inline-block; flex-shrink:0; }
+.hero-h1 {
+  font-family: var(--font-d);
+  font-size: clamp(40px, 5.2vw, 68px);
+  font-weight: 700; line-height: 1.06;
+  color: var(--black); letter-spacing: -.02em; margin-bottom: 20px;
+}
+.hero-h1 em { font-style: italic; color: var(--navy); }
+.hero-sub {
+  font-size: 16px; line-height: 1.75; color: #444;
+  max-width: 440px; margin-bottom: 36px;
+}
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
+.hero-stats {
+  display: flex; gap: 36px; flex-wrap: wrap;
+  padding-top: 32px;
+}
+.hero-stats > div { min-width: 70px; }
+.stat-num {
+  font-family: var(--font-d); font-size: 30px;
+  font-weight: 700; line-height: 1;
+}
+.stat-label { font-size: 12px; color: #666; margin-top: 4px; }
+/* scroll indicator */
+.hero-scroll {
+  position: absolute; bottom: 32px; left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; display: flex; flex-direction: column;
+  align-items: center; gap: 6px;
+  font-size: 11px; color: #888; letter-spacing: .08em; text-transform: uppercase;
+  animation: bounce 2s infinite;
+}
+.hero-scroll svg { opacity: .5; }
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(6px); }
+}
+
+/* STRIP (legacy) */
+.strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.strip-inner {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  max-width: 1140px; margin: 0 auto; padding: 0 32px;
+}
+.strip-cell {
+  padding: 24px 26px;
+  border-right: 1px solid var(--line);
+  display: flex; align-items: center; gap: 13px;
+}
+.strip-cell:last-child { border-right: none; }
+.strip-ico { flex-shrink: 0; }
+.strip-cell strong { display: block; font-size: 13px; font-weight: 600; margin-bottom: 2px; }
+.strip-cell span   { font-size: 12px; color: var(--muted); }
+
+/* PRODUCTS */
+.products { padding: 60px 0 40px; background: var(--white); scroll-margin-top: 80px; }
+.products-header {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  margin-bottom: 40px;
+}
+.products-title {
+  font-family: var(--font-d);
+  font-size: clamp(26px, 3.2vw, 42px);
+  font-weight: 700; color: var(--black); letter-spacing: -.02em;
+}
+.view-all {
+  font-size: 13px; font-weight: 500; color: var(--red);
+  display: inline-flex; align-items: center; gap: 5px;
+  transition: gap .18s;
+}
+.view-all:hover { gap: 8px; }
+.view-all::after { content: '→'; }
+
+.products-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.product-card {
+  background: var(--off);
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  overflow: hidden;
+  display: flex; flex-direction: column;
+  transition: box-shadow .2s, transform .2s, border-color .2s;
+  cursor: default;
+}
+.product-card:hover {
+  border-color: #d8d6d0;
+  box-shadow: 0 12px 40px rgba(0,0,0,.08);
+  transform: translateY(-4px);
+}
+.product-card:hover .pc-enquire { gap: 10px; }
+
+.pc-img {
+  aspect-ratio: 4/3;
+  background: #efefed;
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+  border-radius: 12px 12px 0 0;
+}
+.pc-img img {
+  width: 95%;
+  height: 95%;
+  object-fit: contain;
+  display: block;
+  transition: transform .5s ease;
+}
+.product-card:hover .pc-img img {
+  transform: scale(1.08);
+}
+.pc-img-label { font-size: 12px; color: var(--muted); }
+.pc-tag {
+  position: absolute; top: 12px; left: 12px;
+  font-size: 10px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--red); background: var(--white); border: 1px solid #f5c6c6;
+  padding: 4px 11px; border-radius: 100px;
+}
+.pc-body {
+  padding: 24px 24px 28px;
+  display: flex; flex-direction: column; gap: 8px; flex: 1;
+}
+.pc-num { font-size: 11px; color: var(--muted); font-weight: 400; letter-spacing: .04em; }
+.pc-name {
+  font-family: var(--font-d); font-size: 20px; font-weight: 700;
+  color: var(--black); letter-spacing: -.02em; line-height: 1.2;
+}
+.pc-desc { font-size: 13px; color: var(--muted); line-height: 1.6; flex: 1; margin-top: 2px; }
+.pc-footer {
+  display: flex; align-items: center; justify-content: flex-end;
+  padding-top: 14px; margin-top: 8px; border-top: 1px solid var(--line);
+}
+.pc-badge {
+  font-size: 10px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase;
+  color: var(--muted);
+}
+.pc-enquire {
+  font-size: 13px; font-weight: 600; color: var(--red);
+  background: none; border: none; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 5px; transition: gap .18s;
+}
+.pc-enquire::after { content: '→'; }
+
+/* WHY */
+.why { padding: 40px 0 60px; background: var(--white); overflow: hidden; }
+.why-top {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  margin-bottom: 56px; gap: 32px;
+}
+.why-top .eyebrow { color: var(--red); margin-bottom: 14px; }
+.why-top .eyebrow::before { background: var(--red); }
+.why-h2 {
+  font-family: var(--font-d); font-size: clamp(28px, 3.5vw, 52px);
+  font-weight: 700; color: var(--black); letter-spacing: -.025em; line-height: 1.1;
+}
+.why-sub {
+  font-size: 15px; color: var(--muted); max-width: 300px;
+  line-height: 1.7; text-align: right;
+}
+.why-cards {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+}
+.why-card {
+  background: var(--off);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 28px 24px 32px;
+  display: flex; flex-direction: column; gap: 20px;
+  position: relative; overflow: hidden;
+  transition: box-shadow .3s, transform .3s, border-color .3s;
+  opacity: 0; transform: translateY(28px);
+  transition: opacity .5s ease, transform .5s ease, box-shadow .3s, border-color .3s;
+}
+.why-card.visible {
+  opacity: 1; transform: translateY(0);
+}
+.why-card:hover {
+  box-shadow: 0 16px 48px rgba(236,30,36,.08);
+  border-color: rgba(236,30,36,.3);
+  transform: translateY(-5px);
+}
+.why-card::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 3px; background: var(--red);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .35s ease;
+}
+.why-card:hover::after { transform: scaleX(1); }
+.why-card-icon {
+  width: 48px; height: 48px; border-radius: 12px;
+  background: var(--white); border: 1px solid var(--line);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; transition: background .3s, border-color .3s;
+}
+.why-card:hover .why-card-icon { background: #fff0f0; border-color: #fcc; }
+.why-card-num { font-size: 11px; color: var(--red); font-weight: 600; letter-spacing: .1em; }
+.why-card-title {
+  font-family: var(--font-d); font-size: 17px; font-weight: 700;
+  color: var(--black); line-height: 1.25; margin-top: -8px;
+}
+.why-card-desc { font-size: 13px; color: var(--muted); line-height: 1.7; margin-top: auto; }
+
+/* PROCESS */
+.process { padding: 60px 0; background: var(--off); overflow: hidden; }
+.process-header { margin-bottom: 64px; }
+.process-header .eyebrow { margin-bottom: 14px; }
+.process-h2 {
+  font-family: var(--font-d); font-size: clamp(26px, 3.2vw, 48px);
+  font-weight: 700; color: var(--black); letter-spacing: -.025em;
+}
+.steps {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  gap: 0; position: relative;
+}
+/* connecting line */
+.steps::before {
+  content: '';
+  position: absolute; top: 28px; left: 28px; right: 28px; height: 1px;
+  background: linear-gradient(90deg, var(--red) 0%, rgba(236,30,36,.15) 100%);
+  z-index: 0;
+}
+.step {
+  padding: 0 24px 0 0;
+  position: relative; z-index: 1;
+  opacity: 0; transform: translateX(-16px);
+  transition: opacity .5s ease, transform .5s ease;
+}
+.step.visible { opacity: 1; transform: translateX(0); }
+.step:last-child { padding-right: 0; }
+.step + .step { padding-left: 0; }
+
+.step-circle {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: var(--white); border: 2px solid var(--red);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 28px; position: relative;
+  transition: background .3s, transform .3s;
+  flex-shrink: 0;
+}
+.step:hover .step-circle { background: var(--red); transform: scale(1.08); }
+.step-circle-num {
+  font-family: var(--font-d); font-size: 18px; font-weight: 700;
+  color: var(--red); line-height: 1; transition: color .3s;
+}
+.step:hover .step-circle-num { color: var(--white); }
+
+.step-content {
+  padding-right: 20px;
+  border-right: 1px solid var(--line);
+}
+.step:last-child .step-content { border-right: none; padding-right: 0; }
+
+.step-n {
+  font-size: 10px; font-weight: 600; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--red);
+  margin-bottom: 10px;
+}
+.step-title {
+  font-family: var(--font-d); font-size: 18px; font-weight: 700;
+  color: var(--black); margin-bottom: 10px; letter-spacing: -.01em;
+}
+.step-desc { font-size: 13px; color: var(--muted); line-height: 1.7; }
+
+/* ENQUIRY FORM */
+.enquiry-section { padding: 64px 0; background: var(--off); }
+.enquiry-inner {
+  display: grid; grid-template-columns: 1fr 1.1fr;
+  gap: 80px; align-items: start;
+}
+.enquiry-left { padding-top: 8px; }
+.enquiry-h2 {
+  font-family: var(--font-d); font-size: clamp(32px, 4vw, 48px);
+  font-weight: 700; color: var(--black); line-height: 1.1;
+  letter-spacing: -.02em; margin: 16px 0 20px;
+}
+.enquiry-sub { font-size: 15px; line-height: 1.75; color: var(--muted); max-width: 380px; margin-bottom: 36px; }
+.enquiry-points { display: flex; flex-direction: column; gap: 16px; }
+.enquiry-point { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--black); font-weight: 500; }
+.enquiry-point svg { flex-shrink: 0; }
+
+.enquiry-form {
+  background: #fff; border: 1px solid var(--line); border-radius: 20px;
+  padding: 40px; display: flex; flex-direction: column; gap: 20px;
+}
+.form-row { display: flex; flex-direction: column; gap: 8px; }
+.form-label { font-size: 13px; font-weight: 600; color: var(--black); }
+.form-optional { font-size: 12px; font-weight: 400; color: var(--muted); }
+.form-input {
+  width: 100%; padding: 13px 16px; border: 1.5px solid var(--line);
+  border-radius: 10px; font-size: 14px; font-family: var(--font-b);
+  color: var(--black); background: #fff; transition: border-color .2s;
+}
+.form-input::placeholder { color: #aaa; }
+.form-input:focus { outline: none; border-color: var(--black); }
+.form-textarea { resize: vertical; min-height: 100px; line-height: 1.6; }
+.form-submit {
+  width: 100%; text-align: center; justify-content: center;
+  margin-top: 8px; padding: 15px 24px; font-size: 15px;
+}
+.form-note { font-size: 12px; color: var(--muted); text-align: center; margin-top: -8px; }
+.form-success {
+  display: none; text-align: center; padding: 40px 20px;
+}
+.form-success.show { display: block; }
+.form-success svg { color: var(--red); margin-bottom: 16px; }
+.form-success h3 { font-family: var(--font-d); font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+.form-success p { font-size: 14px; color: var(--muted); }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .hero-copy { max-width: 100%; }
+  .hero-h1 { font-size: clamp(32px, 8vw, 48px); }
+  .strip-inner { grid-template-columns: repeat(2,1fr); }
+  .strip-cell:nth-child(2) { border-right: none; }
+  .strip-cell:nth-child(1),
+  .strip-cell:nth-child(2) { border-bottom: 1px solid var(--line); }
+  .products-grid { grid-template-columns: repeat(2,1fr); gap: 16px; }
+  .why-cards { grid-template-columns: repeat(2,1fr); }
+  .why-top { flex-direction: column; align-items: flex-start; }
+  .why-sub { text-align: left; }
+  .steps { grid-template-columns: repeat(2,1fr); gap: 40px; }
+  .steps::before { display: none; }
+  .step { padding: 0; }
+  .step-content { border-right: none; padding-right: 0; }
+  .testi-inner { grid-template-columns: 1fr; gap: 32px; }
+}
+/* Hero responsive — all screens */
+@media (min-width: 1920px) {
+  .hero-h1 { font-size: 76px; }
+  .hero-copy { max-width: 680px; }
+  .hero-sub { font-size: 18px; }
+}
+@media (max-width: 1600px) {
+  .hero-h1 { font-size: clamp(40px, 4vw, 64px); }
+  .hero-copy { max-width: 540px; }
+}
+@media (max-width: 1280px) {
+  .hero-h1 { font-size: clamp(34px, 3.8vw, 54px); }
+  .hero-copy { max-width: 460px; }
+  .hero-sub { font-size: 15px; max-width: 380px; }
+}
+@media (max-width: 1024px) {
+  .hero-copy { max-width: 100%; }
+  .hero-h1 { font-size: clamp(30px, 5vw, 46px); }
+  .hero-sub { font-size: 14px; max-width: 100%; }
+  .hero-actions { margin-bottom: 28px; }
+  .hero-stats { gap: 20px; padding-top: 20px; }
+  .stat-num { font-size: 24px; }
+  .hero-kit-strip { margin-top: 24px; padding-top: 20px; }
+  .hero::before { background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 45%, rgba(255,255,255,.7) 62%, rgba(255,255,255,0) 80%); }
+}
+@media (max-width: 768px) {
+  /* Hero container */
+  .hero {
+    height: 100dvh; min-height: 100dvh;
+    justify-content: flex-start;
+    padding-top: clamp(36px, 8svh, 72px);
+  }
+  .hero-inner { padding: 0 clamp(16px, 5vw, 24px); }
+  .hero::before { background: linear-gradient(180deg, rgba(255,255,255,.75) 0%, rgba(255,255,255,.55) 35%, rgba(255,255,255,.2) 55%, rgba(255,255,255,0) 70%); }
+
+  /* Copy */
+  .hero-copy { max-width: 100%; }
+  .hero-tag-wrap { margin-bottom: clamp(8px, 1.5svh, 16px); font-size: 9px; }
+  .hero-h1 { font-size: clamp(22px, 6.5vw, 34px); line-height: 1.1; margin-bottom: clamp(6px, 1svh, 12px); }
+  .hero-product-label { margin-bottom: clamp(6px, 1svh, 12px); }
+  .hero-product-name { font-size: clamp(13px, 3.5vw, 16px); }
+  .hero-product-sub { font-size: clamp(11px, 2.8vw, 13px); }
+  .hero-fabric-name { font-size: clamp(10px, 2.5vw, 12px); margin-top: 2px; }
+  .hero-sub { font-size: clamp(11px, 3vw, 13px); line-height: 1.55; margin-bottom: clamp(10px, 1.8svh, 18px); }
+  .hero-actions { margin-bottom: clamp(10px, 1.8svh, 18px); }
+  .btn { padding: 11px 24px; font-size: 13px; }
+
+  /* Stats — vertical stack */
+  .hero-stats {
+    flex-direction: column;
+    gap: clamp(4px, 0.8svh, 8px);
+    padding-top: clamp(10px, 1.5svh, 16px);
+    border-top: none;
+  }
+  .hero-stats > div { display: flex; align-items: baseline; gap: 7px; min-width: unset; }
+  .stat-num { font-size: clamp(14px, 4vw, 18px); }
+  .stat-label { font-size: clamp(10px, 2.5vw, 12px); margin-top: 0; }
+
+  /* Kit strip — vertical stack */
+  .hero-kit-strip {
+    margin-top: clamp(10px, 1.5svh, 18px);
+    padding-top: 0; border-top: none;
+  }
+
+  /* Scroll indicator */
+  .hero-scroll { bottom: 12px; font-size: 10px; }
+
+  /* Sections */
+  .strip-inner { grid-template-columns: 1fr; }
+  .strip-cell  { border-right: none; border-bottom: 1px solid var(--line); }
+  .strip-cell:last-child { border-bottom: none; }
+  .products-grid { grid-template-columns: 1fr; }
+  .why-cards { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; gap: 32px; }
+  .logos { gap: 24px; }
+  .products, .why, .process, .enquiry-section { padding: 40px 0; }
+}
+
+/* Extra small phones (iPhone SE, Galaxy A series narrow) */
+@media (max-width: 390px) {
+  .hero { padding-top: clamp(28px, 7svh, 48px); }
+  .hero-h1 { font-size: clamp(20px, 6vw, 28px); }
+  .hero-sub { font-size: 11px; }
+  .btn { padding: 10px 20px; font-size: 12px; }
+  .stat-num { font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* HERO PRODUCT LABEL */
+.hero-product-label {
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.hero-product-name {
+  display: block;
+  font-family: var(--font-d); font-size: 22px; font-weight: 700;
+  color: var(--black); letter-spacing: -.01em; line-height: 1.2;
+  transition: opacity .4s ease, transform .4s ease;
+}
+.hero-product-sub {
+  display: block;
+  font-size: 13px; color: var(--muted); margin-top: 3px;
+  transition: opacity .4s ease, transform .4s ease;
+}
+.hero-product-label.changing .hero-product-name,
+.hero-product-label.changing .hero-product-sub {
+  opacity: 0; transform: translateY(-10px);
+}
+
+/* KIT STRIP */
+.hero-kit-strip {
+  display: flex; gap: 10px; flex-wrap: wrap;
+  margin-top: 40px; padding-top: 32px;
+  position: relative; z-index: 3;
+}
+@media (max-width: 768px) {
+  .hero-kit-strip {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: clamp(6px, 1svh, 10px);
+    border-top: none;
+  }
+  .kit-item { width: fit-content; font-size: clamp(11px, 3vw, 13px); padding: 6px 14px; }
+}
+.kit-item {
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 16px; border-radius: 100px;
+  border: 1.5px solid var(--line);
+  background: rgba(255,255,255,.8);
+  font-size: 13px; font-weight: 500; color: var(--muted);
+  cursor: pointer; transition: all .25s ease;
+  backdrop-filter: blur(4px);
+}
+.kit-item:hover { border-color: var(--red); color: var(--red); }
+.kit-item.active {
+  background: var(--black); border-color: var(--black);
+  color: #fff;
+}
+.kit-item.active .kit-item-icon svg { stroke: #fff; }
+.kit-item-icon { width: 20px; height: 20px; display:flex; align-items:center; }
+.kit-item-icon svg { stroke: var(--muted); transition: stroke .25s; }
+.kit-item:hover .kit-item-icon svg { stroke: var(--red); }
+
+/* SLIDE DOTS */
+.hero-dots {
+  position: absolute; bottom: 60px; left: 32px;
+  display: flex; gap: 8px; z-index: 4;
+}
+.hero-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: rgba(0,0,0,.2); cursor: pointer;
+  transition: all .3s ease;
+}
+.hero-dot.active { width: 24px; border-radius: 4px; background: var(--red); }
+
+/* HERO ANIMATIONS */
+.hero-h1 { animation: heroFadeUp .8s ease both; }
+.hero-tag { animation: heroFadeUp .6s ease both; }
+.hero-product-label { animation: heroFadeUp .7s .1s ease both; }
+.hero-sub { animation: heroFadeUp .7s .2s ease both; }
+.hero-actions { animation: heroFadeUp .7s .3s ease both; }
+.hero-stats { animation: heroFadeUp .7s .4s ease both; }
+.hero-kit-strip { animation: heroFadeUp .7s .5s ease both; }
+
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Slide word pulse on change */
+@keyframes wordPop {
+  0%   { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.hero-anim-word { display: inline-block; animation: wordPop .5s ease both; }
+
+
+/* Hero tag fix */
+.hero-tag-wrap {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 10px; font-weight: 600; letter-spacing: .1em;
+  text-transform: uppercase; color: #444;
+  margin-bottom: 20px; white-space: nowrap;
+}
+.hero-dot-red {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--red); flex-shrink: 0; display: inline-block;
+}
+/* Fabric name */
+.hero-fabric-name {
+  display: block; font-size: 11px; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--red); margin-top: 6px;
+  transition: opacity .4s ease;
+}
+.hero-product-label.changing .hero-fabric-name {
+  opacity: 0;
+}
+
+.fabric-label {
+  color: var(--muted); font-weight: 500; text-transform: none; letter-spacing: 0;
+}
+.hero-color-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  margin-top: 8px; font-size: 11px; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase; color: #444;
+}
+.color-dot {
+  width: 14px; height: 14px; border-radius: 50%;
+  background: #ffffff; border: 1.5px solid #ccc;
+  flex-shrink: 0; display: inline-block;
+}
+
+.pc-price {
+  font-family: var(--font-d); font-size: 22px; font-weight: 700;
+  color: var(--red); letter-spacing: -.01em; margin-top: 2px;
+}
+
+.pc-meta { display: flex; flex-direction: column; gap: 6px; margin-top: 4px; }
+.pc-meta-row { display: flex; align-items: center; gap: 8px; }
+.pc-meta-label { font-size: 11px; font-weight: 600; color: var(--muted); letter-spacing: .05em; text-transform: uppercase; min-width: 52px; }
+.pc-meta-val { font-size: 12px; color: var(--black); font-weight: 500; }
+.pc-swatches { display: flex; gap: 6px; align-items: center; }
+.swatch {
+  width: 16px; height: 16px; border-radius: 50%;
+  display: inline-block; cursor: default;
+  transition: transform .2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,.12);
+}
+.swatch:hover { transform: scale(1.2); }
+.swatch { cursor: pointer; padding: 0; border-width: 1.5px; border-style: solid; }
+.swatch.active { outline: 2px solid var(--red); outline-offset: 2px; }
+
+@media (max-width: 900px) {
+  .enquiry-inner { grid-template-columns: 1fr; gap: 40px; }
+  .enquiry-form { padding: 28px; }
+  .enquiry-section { padding: 64px 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="hero-tag-wrap"><span class="hero-dot-red"></span><span class="hero-tag-text">Cricket Whites Collection</span></div>
+
+      <h1 class="hero-h1">
+        Cricket whites<br>built to<br>
+        <span class="r hero-anim-word">last</span> <em class="hero-anim-em">the season.</em>
+      </h1>
+
+      <!-- Slide-linked product name -->
+      <div class="hero-product-label">
+        <span class="hero-product-name" id="hero-product-name">Classic White Kit</span>
+        <span class="hero-product-sub" id="hero-product-sub">Polo shirt + trouser set</span>
+        <span class="hero-fabric-name" id="hero-fabric-name"><span class="fabric-label">Fabric: </span><span class="fabric-value">Corsa 180 GSM</span></span>
+      </div>
+
+      <!-- CHANGE 3 & 4: delivery + MOQ -->
+      <p class="hero-sub">
+        ICC-regulation whites for clubs, academies, and international sides.
+        Custom embroidery, <span class="r">MOQ from 15 pieces</span>, <span class="r">10–12 day delivery</span> worldwide.
+      </p>
+      <div class="hero-actions">
+        <a href="#" id="wa-order" class="btn btn-dark">Order Your Whites</a>
+      </div>
+      <!-- CHANGE 1 & 2: stats -->
+      <div class="hero-stats">
+        <div><div class="stat-num r">40K+</div><div class="stat-label">Teams kitted out</div></div>
+        <div><div class="stat-num r">220+</div><div class="stat-label">Countries worldwide</div></div>
+        <div><div class="stat-num r">10–12</div><div class="stat-label">Day delivery</div></div>
+      </div>
+    </div>
+
+    <!-- Kit items strip -->
+    <div class="hero-kit-strip">
+      <div class="kit-item active" data-index="0">
+        <span>White Kit</span>
+      </div>
+      <div class="kit-item" data-index="1">
+        <span>Half White Kit</span>
+      </div>
+      <div class="kit-item" data-index="2">
+        <span>Full Sleeve White Kit</span>
+      </div>
+      <div class="kit-item" data-index="3">
+
+        <span>Full Sleeve Half White Kit</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Premium price card — bottom right -->
+  <div class="hero-price-card">
+    <div class="hpc-label">Starting from</div>
+    <div class="hpc-price"><span class="hpc-symbol">$</span>32</div>
+  </div>
+
+  <div class="hero-scroll">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    Scroll
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+  <div class="container">
+    <div class="products-header">
+      <h2 class="products-title">The Whites Range</h2>
+    </div>
+    <div class="products-grid">
+
+      <div class="product-card">
+        <div class="pc-img" style="background:#f0f0ee;">
+          <img id="product-img-tshirt" src="tshirt-white.png" alt="Cricket White T-Shirt" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div class="pc-body">
+          <div class="pc-num">01</div>
+          <div class="pc-name">Cricket White T-Shirt</div>
+          <div class="pc-price">$13</div>
+          <!-- CHANGE 9: cotton → Corsa fabric -->
+          <div class="pc-desc">Lightweight Corsa 180 GSM fabric. Custom name, number &amp; club badge embroidery available.</div>
+          <div class="pc-meta">
+            <div class="pc-meta-row"><span class="pc-meta-label">Fabric</span><span class="pc-meta-val">Corsa 180 GSM</span></div>
+            <div class="pc-meta-row"><span class="pc-meta-label">Colours</span><div class="pc-swatches">
+              <button class="swatch active" data-target="product-img-tshirt" data-color="white" data-img="tshirt-white.png" style="background:#fff;border:1.5px solid #ccc;" title="Pure White" aria-label="Pure White"></button>
+              <button class="swatch" data-target="product-img-tshirt" data-color="cream" data-img="tshirt-cream.png" style="background:#f5f0e0;border:1.5px solid #ddd;" title="Cream" aria-label="Cream"></button>
+            </div></div>
+          </div>
+          <div class="pc-footer">
+            <a class="pc-enquire" href="#" onclick="openWA(this);return false;" data-product="Cricket White T-Shirt — $13">Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="pc-img" style="background:#f0f0ee;">
+          <img id="product-img-trouser" src="trouser-white.png" alt="Cricket White Trouser" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div class="pc-body">
+          <div class="pc-num">02</div>
+          <div class="pc-name">Cricket White Trouser</div>
+          <div class="pc-price">$13</div>
+          <div class="pc-desc">Flat-front with elastic waist option. Tailored cut, all builds accommodated.</div>
+          <div class="pc-meta">
+            <div class="pc-meta-row"><span class="pc-meta-label">Fabric</span><span class="pc-meta-val">Corsa 220 GSM</span></div>
+            <div class="pc-meta-row"><span class="pc-meta-label">Colours</span><div class="pc-swatches">
+              <button class="swatch active" data-target="product-img-trouser" data-color="white" data-img="trouser-white.png" style="background:#fff;border:1.5px solid #ccc;" title="Pure White" aria-label="Pure White"></button>
+              <button class="swatch" data-target="product-img-trouser" data-color="cream" data-img="trouser-cream.png" style="background:#f5f0e0;border:1.5px solid #ddd;" title="Cream" aria-label="Cream"></button>
+            </div></div>
+          </div>
+          <div class="pc-footer">
+            <a class="pc-enquire" href="#" onclick="openWA(this);return false;" data-product="Cricket White Trouser — $13">Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="pc-img" style="background:#f0f0ee;">
+          <img src="kit-bundle.png" alt="Full Kit Bundle" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div class="pc-body">
+          <div class="pc-num">03</div>
+          <div class="pc-name">Full Kit Bundle</div>
+          <div class="pc-price">$52</div>
+          <div class="pc-desc">T-shirt + trouser + cap. Best value for clubs ordering as a complete team.</div>
+          <div class="pc-footer">
+            <a class="pc-enquire" href="#" onclick="openWA(this);return false;" data-product="Full Kit Bundle — $52">Enquire</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <div class="container">
+    <div class="why-top">
+      <div>
+        <div class="eyebrow">Why IRA Whites</div>
+        <h2 class="why-h2">Built for<br><span class="r">serious cricket.</span></h2>
+      </div>
+      <p class="why-sub">Every detail engineered for players who care about performance and how they look on the pitch.</p>
+    </div>
+    <div class="why-cards">
+
+      <div class="why-card">
+        <div class="why-card-icon">
+          <svg width="22" height="22" fill="none" stroke="var(--red)" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <div class="why-card-num">01</div>
+        <div class="why-card-title">ICC Regulation White</div>
+        <div class="why-card-desc">Fabric opacity and weight tested to meet ICC standards for first-class and club cricket.</div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-card-icon">
+          <svg width="22" height="22" fill="none" stroke="var(--red)" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <div class="why-card-num">02</div>
+        <div class="why-card-title">Corsa Fabric</div>
+        <div class="why-card-desc">T-Shirt: <strong>Corsa 180 GSM</strong> · Trouser: <strong>Corsa 220 GSM</strong>. Pre-treated blend stays bright white through a full season of washes.</div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-card-icon">
+          <svg width="22" height="22" fill="none" stroke="var(--red)" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <div class="why-card-num">03</div>
+        <div class="why-card-title">Custom Embroidery</div>
+        <div class="why-card-desc">Name, number &amp; club badge embroidered to last — no fading after repeated washing.</div>
+      </div>
+
+      <!-- CHANGE 8: 15–18 → 10–12 -->
+      <div class="why-card">
+        <div class="why-card-icon">
+          <svg width="22" height="22" fill="none" stroke="var(--red)" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="why-card-num">04</div>
+        <div class="why-card-title">Fast Turnaround</div>
+        <div class="why-card-desc">Full production and worldwide delivery completed in 10–12 days from order confirmation.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="container">
+    <div class="process-header">
+      <div class="eyebrow">The Process</div>
+      <h2 class="process-h2">From enquiry to <span class="r">pitch-ready.</span></h2>
+    </div>
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-circle"><span class="step-circle-num">1</span></div>
+        <div class="step-content">
+          <div class="step-n">Step 01</div>
+          <div class="step-title">Submit Your Design</div>
+          <div class="step-desc">Share your logo, club colours, and any reference kit via our enquiry form or WhatsApp.</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-circle"><span class="step-circle-num">2</span></div>
+        <div class="step-content">
+          <div class="step-n">Step 02</div>
+          <div class="step-title">Get Your Mockup</div>
+          <div class="step-desc">Our design team returns a 3D digital mockup for your approval within 48 hours.</div>
+        </div>
+      </div>
+
+      <!-- CHANGE 6: 50% deposit → full payment -->
+      <div class="step">
+        <div class="step-circle"><span class="step-circle-num">3</span></div>
+        <div class="step-content">
+          <div class="step-n">Step 03</div>
+          <div class="step-title">Approve &amp; Pay</div>
+          <div class="step-desc">Confirm sizing, quantities, and embroidery details. Full payment confirms production.</div>
+        </div>
+      </div>
+
+      <!-- CHANGE 7: 15–18 → 10–12 -->
+      <div class="step">
+        <div class="step-circle"><span class="step-circle-num">4</span></div>
+        <div class="step-content">
+          <div class="step-n">Step 04</div>
+          <div class="step-title">We Ship</div>
+          <div class="step-desc">Quality-checked kits dispatched with full tracking. Arrives in 10–12 days.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ENQUIRY FORM -->
+<section class="enquiry-section">
+  <div class="container">
+    <div class="enquiry-inner">
+      <div class="enquiry-left">
+        <div class="eyebrow"><span class="r">—</span> Get a Quote</div>
+        <h2 class="enquiry-h2">Tell us what<br>you need.</h2>
+        <p class="enquiry-sub">Share a few details and our team will get back to you within a few hours with pricing and next steps.</p>
+        <!-- CHANGE 10: added 2 new points -->
+        <div class="enquiry-points">
+          <div class="enquiry-point">
+            <svg width="18" height="18" fill="none" stroke="var(--red)" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            <span>Free design consultation</span>
+          </div>
+          <div class="enquiry-point">
+            <svg width="18" height="18" fill="none" stroke="var(--red)" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            <span>Response within a few hours</span>
+          </div>
+          <div class="enquiry-point">
+            <svg width="18" height="18" fill="none" stroke="var(--red)" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            <span>10–12 day worldwide delivery</span>
+          </div>
+          <div class="enquiry-point">
+            <svg width="18" height="18" fill="none" stroke="var(--red)" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            <span>MOQ 15 pieces per style</span>
+          </div>
+          <div class="enquiry-point">
+            <svg width="18" height="18" fill="none" stroke="var(--red)" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            <span>No obligation, no spam</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="enquiry-right">
+        <form class="enquiry-form" id="enquiryForm">
+          <div class="form-row">
+            <label class="form-label" for="ef-name">Name <span class="r">*</span></label>
+            <input class="form-input" type="text" id="ef-name" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="ef-phone">Phone Number <span class="r">*</span></label>
+            <!-- CHANGE 5: India phone placeholder -->
+            <input class="form-input" type="tel" id="ef-phone" name="phone" placeholder="+1 234 567 8900" required>
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="ef-email">Email <span class="form-optional">(optional)</span></label>
+            <input class="form-input" type="email" id="ef-email" name="email" placeholder="you@club.com">
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="ef-requirements">Requirements <span class="r">*</span></label>
+            <textarea class="form-input form-textarea" id="ef-requirements" name="requirements" rows="4" placeholder="Tell us about your team size, kit type, timeline, customization needs..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark form-submit" id="enquirySubmitBtn"><span>Send Enquiry</span></button>
+          <p class="form-note" id="enquiryFormNote">We will reply by email within a few hours.</p>
+        </form>
+        <div class="form-success" id="enquirySuccess">
+          <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" style="margin:0 auto 16px;display:block;"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+          <h3>Thanks — we've got it!</h3>
+          <p>Your enquiry has been sent. Our team will reply by email within a few hours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+// Hero background crossfade slider
+var heroSlides = [
+  { name: "Classic White Kit", sub: "Polo shirt + cricket trouser", fabric: "Corsa 180 GSM", image: "hero-slide-1.jpg", mobileImage: "mobile-hero-slide 1.png", bgPos: "center center", mobileBgPos: "center top" },
+  { name: "Half White Kit", sub: "Polo shirt + cricket trouser", fabric: "Corsa 180 GSM", image: "hero-slide-2.jpg", mobileImage: "mobile-hero-slide 2.png", bgPos: "center center", mobileBgPos: "center top" },
+  { name: "Full Sleeve White Kit", sub: "Full sleeve polo + cricket trouser", fabric: "Corsa 180 GSM", image: "hero-slide-3.png", mobileImage: "mobile-hero-slide 3.png", bgPos: "center center", mobileBgPos: "center top" },
+  { name: "Full Sleeve Half White Kit", sub: "Full sleeve polo + cricket trouser", fabric: "Corsa 180 GSM", image: "hero-slide-4.png", mobileImage: "mobile-hero-slide 4.png", bgPos: "center center", mobileBgPos: "center top" }
+];
+function isMobile() { return window.innerWidth <= 768; }
+function slideImg(s) { return isMobile() && s.mobileImage ? s.mobileImage : s.image; }
+function slideBgPos(s) { return isMobile() && s.mobileBgPos ? s.mobileBgPos : (s.bgPos || 'center center'); }
+var heroCurrent = 0;
+var heroEl = document.querySelector('.hero');
+var heroSlide2 = document.createElement('div');
+heroSlide2.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:center center;background-repeat:no-repeat;opacity:0;transition:opacity 1.2s ease;z-index:0;';
+heroEl.insertBefore(heroSlide2, heroEl.firstChild);
+var heroSlide1 = document.createElement('div');
+heroSlide1.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:center center;background-repeat:no-repeat;opacity:1;transition:opacity 1.2s ease;z-index:0;';
+heroEl.insertBefore(heroSlide1, heroEl.firstChild);
+heroSlide1.style.backgroundImage = "url('" + slideImg(heroSlides[0]) + "')";
+heroSlide1.style.backgroundPosition = slideBgPos(heroSlides[0]);
+heroSlide2.style.backgroundImage = "url('" + slideImg(heroSlides[1]) + "')";
+heroSlide2.style.backgroundPosition = slideBgPos(heroSlides[1]);
+var heroOnSlide1 = true; // tracks which layer is currently visible
+
+function updateHeroContent(idx) {
+  var label = document.querySelector('.hero-product-label');
+  if (label) {
+    label.classList.add('changing');
+    setTimeout(function() {
+      document.getElementById('hero-product-name').textContent = heroSlides[idx].name;
+      document.getElementById('hero-product-sub').textContent = heroSlides[idx].sub;
+      var fn = document.getElementById('hero-fabric-name');
+      if(fn) { fn.querySelector('.fabric-value') ? fn.querySelector('.fabric-value').textContent = heroSlides[idx].fabric || '' : fn.textContent = 'Fabric: ' + (heroSlides[idx].fabric || ''); }
+      label.classList.remove('changing');
+    }, 350);
+  }
+  document.querySelectorAll('.hero-dot').forEach(function(d, i) { d.classList.toggle('active', i === idx); });
+  document.querySelectorAll('.kit-item[data-index]').forEach(function(k) {
+    var ki = parseInt(k.getAttribute('data-index'));
+    k.classList.toggle('active', ki === idx);
+  });
+}
+
+function goToHeroSlide(idx) {
+  if (idx === heroCurrent) return;
+  var incoming = heroOnSlide1 ? heroSlide2 : heroSlide1;
+  var outgoing = heroOnSlide1 ? heroSlide1 : heroSlide2;
+  incoming.style.backgroundImage = "url('" + slideImg(heroSlides[idx]) + "')";
+  incoming.style.backgroundPosition = slideBgPos(heroSlides[idx]);
+  incoming.style.opacity = '1';
+  outgoing.style.opacity = '0';
+  heroOnSlide1 = !heroOnSlide1;
+  heroCurrent = idx;
+  updateHeroContent(idx);
+}
+
+setInterval(function() {
+  var next = (heroCurrent + 1) % heroSlides.length;
+  goToHeroSlide(next);
+}, 4000);
+
+// Swap desktop/mobile images on resize/rotate
+window.addEventListener('resize', function() {
+  var active = heroOnSlide1 ? heroSlide1 : heroSlide2;
+  active.style.backgroundImage = "url('" + slideImg(heroSlides[heroCurrent]) + "')";
+  active.style.backgroundPosition = slideBgPos(heroSlides[heroCurrent]);
+});
+
+document.querySelectorAll('.hero-dot').forEach(function(dot) {
+  dot.addEventListener('click', function() {
+    var idx = parseInt(this.getAttribute('data-slide'));
+    goToHeroSlide(idx);
+  });
+});
+
+// Kit item buttons trigger slide change
+document.querySelectorAll('.kit-item[data-index]').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var idx = parseInt(this.getAttribute('data-index'));
+    if (isNaN(idx)) return;
+    goToHeroSlide(idx);
+  });
+});
+
+
+// Product enquire WhatsApp — matches irasportswear.com format
+function openWA(el) {
+  var product = el.getAttribute('data-product') || 'a product';
+  var pageUrl = window.location.href;
+  var pageTitle = document.title || 'Cricket Whites — IRA SPORTSWEAR';
+  var msg = "Hi IRA Sportswear, I am interested in your products."
+    + "\n\nProduct: " + product
+    + "\n\nI am currently viewing this page:"
+    + "\nPage: " + pageTitle
+    + "\nURL: " + pageUrl;
+  window.open(
+    "https://api.whatsapp.com/send/?phone=18476242660&text=" + encodeURIComponent(msg) + "&type=phone_number&app_absent=0",
+    "_blank"
+  );
+}
+
+
+// Product colour swatch swap
+document.querySelectorAll('.swatch[data-target]').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var targetId = this.getAttribute('data-target');
+    var imgSrc = this.getAttribute('data-img');
+    var img = document.getElementById(targetId);
+    if (img && imgSrc) { img.src = imgSrc; }
+    // toggle active state among siblings in the same swatch group
+    var group = this.closest('.pc-swatches');
+    if (group) {
+      group.querySelectorAll('.swatch').forEach(function(s) { s.classList.remove('active'); });
+    }
+    this.classList.add('active');
+  });
+});
+
+
+// Enquiry form — submit silently via existing Shopify App Proxy (/apps/zoho)
+// Same proxy + Zoho Flow webhook already used by the IRA feedback form.
+// Zoho Flow should recognize form_type: "cricket_whites_enquiry" and route
+// the email to the team inbox — no mail app opens, no page reload.
+var ENQUIRY_ENDPOINT = '/apps/zoho';
+
+var enquiryForm = document.getElementById('enquiryForm');
+if (enquiryForm) {
+  enquiryForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    var name = document.getElementById('ef-name').value.trim();
+    var phone = document.getElementById('ef-phone').value.trim();
+    var email = document.getElementById('ef-email').value.trim();
+    var requirements = document.getElementById('ef-requirements').value.trim();
+
+    if (!name || !phone || !requirements) {
+      var note = document.getElementById('enquiryFormNote');
+      note.textContent = 'Please fill in your name, phone, and requirements.';
+      note.style.color = '#e02424';
+      return;
+    }
+
+    var btn = document.getElementById('enquirySubmitBtn');
+    var btnLabel = btn.querySelector('span');
+    btn.disabled = true;
+    var originalLabel = btnLabel.textContent;
+    btnLabel.textContent = 'Sending…';
+
+    var payload = {
+      form_type: 'cricket_whites_enquiry',
+      first_name: name,
+      last_name: '',
+      email: email,
+      phone: phone,
+      team_name: '',
+      message: requirements,
+      file_url: '',
+      page_url: window.location.href,
+      page_title: document.title
+    };
+
+    try {
+      var res = await fetch(ENQUIRY_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (!res.ok) throw new Error('Server returned ' + res.status);
+
+      enquiryForm.style.display = 'none';
+      var successEl = document.getElementById('enquirySuccess');
+      if (successEl) successEl.classList.add('show');
+    } catch (err) {
+      var note = document.getElementById('enquiryFormNote');
+      note.textContent = 'Something went wrong — please try again or WhatsApp us directly.';
+      note.style.color = '#e02424';
+      btn.disabled = false;
+      btnLabel.textContent = originalLabel;
+    }
+  });
+}
+
+// Dynamic WhatsApp links with current page URL
+function buildWALink() {
+  var pageUrl = window.location.href;
+  var pageTitle = document.title || "Cricket Whites — IRA SPORTSWEAR";
+  var msg = "Hi IRA Sportswear, I am interested in your products."
+    + "\n\nI am currently viewing this page:"
+    + "\nPage: " + pageTitle
+    + "\nURL: " + pageUrl;
+  return "https://api.whatsapp.com/send/?phone=18476242660&text=" + encodeURIComponent(msg) + "&type=phone_number&app_absent=0";
+}
+
+var waOrder = document.getElementById("wa-order");
+if (waOrder) waOrder.href = buildWALink();
+
+// Staggered scroll-in animation for why cards
+const cards = document.querySelectorAll('.why-card');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const card = entry.target;
+      const idx = Array.from(cards).indexOf(card);
+      setTimeout(() => { card.classList.add('visible'); }, idx * 100);
+      observer.unobserve(card);
+    }
+  });
+}, { threshold: 0.15 });
+cards.forEach(c => observer.observe(c));
+
+// Staggered scroll-in for process steps
+const steps = document.querySelectorAll('.step');
+const stepObs = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const idx = Array.from(steps).indexOf(el);
+      setTimeout(() => el.classList.add('visible'), idx * 120);
+      stepObs.unobserve(el);
+    }
+  });
+}, { threshold: 0.2 });
+steps.forEach(s => stepObs.observe(s));
+
+// Fade-up on scroll for other sections
+const fadeEls = document.querySelectorAll('.process');
+const fadeObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+      fadeObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+fadeEls.forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(24px)';
+  el.style.transition = 'opacity .6s ease, transform .6s ease';
+  fadeObs.observe(el);
+});
+</script>
+</body>
+</html>
